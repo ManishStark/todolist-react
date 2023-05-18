@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #242424;
+}
+
+@font-face {
+  font-family: "eina_bold";
+  src: url('./assets/eina.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "eina_regular";
+  src: url('./fonts/Eina01-Regular.ttf');
+}
+
+@font-face {
+  font-family: "eina_semi_bold";
+  src: url('./fonts/Eina01-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: "eina_light";
+  src: url('./fonts/Eina01-Light.ttf');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'eina_semi_bold', sans-serif;
+  /* font-family: 'Public Sans', sans-serif; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn {
+  margin: 0;
+  padding: 0.3rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.btn_primary {
+  background-color: #55c57a;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn_primary:hover {
+  color: #55c57a;
+  background-color: var(--color-white);
+  border: 1px solid #55c57a;
+}
+
+.btn_secondary {
+  background-color: #ff7730;
+  color: var(--color-white);
+  transition: all 0.3s ease;
+
+}
+
+.btn_secondary:hover {
+  color: #ff7730;
+  background-color: var(--color-white);
+  border: 1px solid #ff7730;
+}
